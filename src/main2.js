@@ -20,7 +20,8 @@ function main(){
     // db.query(inserting);
 
 
-    let display = "SELECT * FROM student";
+    let display = "update student set name='AJ' where id=1";
+   // let display = "select * from student";
     db.query(display,(error,results,fields)=>{
         console.log(results);
     });
